@@ -1,0 +1,174 @@
+
+// About__me
+.about__me{
+    display: flex;
+    width: 100%;
+    max-width: 90%;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top: 100px;
+
+    .box{
+        display: block;
+         width: 400px;
+         height: 400px;
+         position: relative;
+         animation: rotatBox 10s linear infinite;
+         overflow: hidden;
+         border-radius: 50%;
+         @keyframes rotatBox {
+             0% {
+                 transform: rotate(0deg);
+             }
+             100% {
+                 transform: rotate(360deg);
+             }
+         }
+
+         @media (max-width: 991px) {
+            width: 300px;   
+            height: 300px;
+         }
+         @media (max-width: 771px) {
+            width: 250px;   
+            height: 250px;
+         }
+         @media (max-width: 576px) {
+            display: none;
+         }
+
+        .circle{
+             position: absolute;
+             top: 0;
+             left: 0;
+             width: 100%;
+             height: 100%;
+             background: yellow;
+             border-radius: 50%;
+             animation: animate 5s linear infinite;
+             &:nth-child(2) {
+                 background: $hColor;
+                 animation-delay: -2.5s;
+             }
+             @keyframes animate {
+                 0% {
+                     transform: scale(1);
+                     transform-origin: left;
+                 }
+                 50% {
+                     transform: scale();
+                     transform-origin: left;
+                 }
+                 51% {
+                     transform: scale(1);
+                     transform-origin: right;
+                 }
+                 100% {
+                     transform: scale(1);
+                     transform-origin: right;
+                }
+            }
+        }
+    }
+
+    .about__me-item{
+        width: 45%;
+        color: $fontColor; 
+        @media (max-width: 580px) {
+            width: 50%;
+        }
+        @media (max-width: 576px) {
+            width: 80%;
+        }
+
+        h4{
+            font-size: 45px;
+            font-weight: bold;
+            text-transform: uppercase;
+            @media (max-width: 1200px) {
+                font-size: 40px;
+            }
+            @media (max-width: 991px) {
+                font-size: 30px;
+            }  
+            @media (max-width: 771px) {
+                font-size: 20px;
+            }
+            @media (max-width: 350px) {
+                font-size: 16px;
+            }
+        }
+
+        h2{
+            font-size: 92px;
+            font-weight: bold;
+            color: rgba(0, 0, 0, 0.150);
+            @media (max-width: 1200px) {
+                font-size: 75px;
+            }
+            @media (max-width: 991px) {
+                font-size: 60px;
+            }
+            @media (max-width: 771px) {
+                font-size: 50px;
+            }
+            @media (max-width: 350px) {
+                font-size: 35px;
+            }
+        }
+
+        p{
+            font-size: 12px;
+            font-weight: lighter;
+            color: rgba(0, 0, 0, 0.500);
+
+            span{
+                font-size: 12px;
+                font-weight: lighter;
+                color: rgba(0, 0, 0, 0.500);
+            }
+        }
+
+        #moreWork{
+            position: relative;
+            display: block;
+            margin-top: 10px;
+            padding: 5px 15px;
+            color: $blackColor;
+            font-size: 12px;
+            font-weight: bold;
+            text-transform: uppercase;
+            border-radius: 40px;
+            letter-spacing: 1px;
+            transition: $transition;
+
+            &:hover{
+                background: #000;
+                color: $hColor;
+            }
+            &:focus{
+                outline: 0;
+            }
+            @media (max-width: 850px) {
+                font-size: 10px;
+            }
+            @media (max-width: 771px) {
+                font-size: 6px;
+                padding: 3px 5px;
+            }
+            
+        }
+        @keyframes animate {
+            0%{
+                width: 0px;
+                height: 0px;
+                opacity: 0.5;
+            }
+            100%{
+                width: 500px;
+                height: 500px;
+                opacity: 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,
+    300;0,400;0,700;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="wow/animate.css">
+    <script src="wow/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <title>Portfolio</title>
+</head>
+<body class="no-scroll">
+        <!-- header -->
+        <header class="header header--fixed">
+            <div class="container">
+                <div class="header__inner">
+                    
+                    <div class="user__item">
+                        <ul class="user__logo">.sx01</ul>
+                        <div>
+                            <div class="user__prof">Seitkhan<br>Balikbaev</div>
+                            <div class="user__text">Java Script Developer</div>
+                        </div>
+                    </div>
+                    
+                    <nav class="nav">
+                        <span class="nav__line"></span>
+                        <ul class="nav__list">
+                            <li class="nav__item">
+                                <a href="#work" class="nav__link scroll active">Work</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#about__me" class="nav__link scroll">About me</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#reviews" class="nav__link scroll">Reviews</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#news" class="nav__link scroll">News</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <button class="nav-toggle" id="nav_toggle" type="button">
+                        <span class="nav-toggle__item"></span>
+                    </button>
+                </div>
+            </div> <!-- /.container -->
+        </header>
+
+        <!-- cloudy -->
+        <div class="cloudy">
+            <div class="container">
+                <div class="scene">
+                    <div class="moon"></div>
+                    <div class="mars"></div>
+                    <img src="img/night/forest.png" class="forest" alt="">
+                    <img src="img/night/cloud1.png" class="cloud1" alt="">
+                    <img src="img/night/cloud2.png" class="cloud2" alt="">
+                    <img src="img/night/cloud3.png" class="cloud3" alt="">
+                    <img src="img/night/cloud1.png" class="cloud4" alt="">
+                    <img src="img/night/cloud2.png" class="cloud5" alt="">
+                    <img src="img/night/cloud3.png" class="cloud6" alt="">
+                </div>
+            </div>
+        </div>
+
+        <!-- blog -->
+        <section class="blog">
+            <div class="container">
+                <div class="blog__inner">
+                    <div class="user__blog">
+
+                        <div class="user__item">
+                            <p class="inform">Hello, I’m</p>
+                            <p class="user__name">Seitkhan Balikbaev</p>
+                            <p class="inform__prof">Java Script developer</p>
+                        </div>
+
+                        <div>
+                            <ul class="user__social">
+                                <li>
+                                    <a href="#">
+                                        <img src="img/icon/telegram.svg" width="23" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="img/icon/whatsapp.svg" width="25" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="img/icon/instagram.svg" width="23"
+                                        alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="img/icon/facebook.svg" width="23" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="img/icon/vk.svg" width="30" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                            
+                            <div class="button">
+                                    <a href="#" class="btn" data-hire="request">Hire me</a>
+                                    <a href="#" class="btn" data-hire="resume">See my resume</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>     
+            </div>  <!-- /.container -->
+        </section>  <!-- /.blog -->
+        
+        <!-- filter -->
+        <div class="container" id="work">
+            <div class="main__filter">
+
+                <div class="theme">
+                    <p>themes</p>
+                    <label for="">
+                    <input type="radio" name="theme">
+                         <a class="fas" onclick="changeColorInitial()">Initial</a>
+                    </label>
+
+                    <label for="">
+                       <input type="radio" name="theme">
+                            <a class="fas" onclick="changeColorWhite()">Gray</a>
+                    </label>
+
+                    <label for="">
+                       <input type="radio" name="theme">
+                            <a class="fas" onclick="changeColorDark()">Dark</a>
+                    </label>
+                </div> <!-- /.theme -->
+                
+                <div class="filter">
+                    <li>
+                        <a href="#" class="filter__row" data-filter="all">All</a>
+                    </li>
+                    <li>
+                        <a href="#" class="filter__row" data-filter="app">App</a>
+                    </li>
+                    <li>
+                        <a href="#" class="filter__row" data-filter="website">Websites</a>
+                    </li>
+                    <li>
+                        <a href="#" class="filter__row" data-filter="interaction">Interaction</a>
+                    </li>
+                </div>
+            </div>
+        </div>
+            
+        <!-- title -->
+        <div class="title">
+            <div class="container">
+                <div class="title__inner">
+                    <div class="title__intro wow fadeInRight" data-wow-offset="185" data-wow-duration="2s">
+                        <div class="paint">
+                            <div class="title__paint" data-cat="app">
+                                <img class="title__photo" src="img/bg-item.png" alt="">
+        
+                                <div class="paint__text">
+                                    <div class="category">CATEGORY</div>
+                                    <div class="project__text">
+                                        PROJECT TITLE
+                                        <time class="project__text" data-time="2020-11-22 18:00">2020</time>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="paint">
+                            <div class="title__paint" data-cat="app">
+                                <img class="title__photo"  src="img/bg-item.png" alt="">
+        
+                                <div class="paint__text">
+                                    <div class="category">CATEGORY</div>
+                                    <div class="project__text">
+                                        PROJECT TITLE
+                                        <time class="project__text" data-time="2020-11-22 18:00">2020</time>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="paint">
+                            <div class="title__paint" data-cat="app">
+                                <img class="title__photo"  src="img/bg-item.png" alt="">
+        
+                                <div class="paint__text">
+                                    <div class="category">CATEGORY</div>
+                                    <div class="project__text">
+                                        PROJECT TITLE
+                                        <time class="project__text" data-time="2020-11-22 18:00">2020</time>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <span id="hide"><hr></span>
+                    <div id="adverb">
+                    <div class="title__intro wow fadeInLeft" data-wow-offset="185" data-wow-duration="3s">
+                        <div class="paint">
+                            <div class="title__paint" data-cat="app">
+                                <img class="title__photo"  src="img/bg-item.png" alt="">
+        
+                                <div class="paint__text">
+                                    <div class="category">CATEGORY</div>
+                                    <div class="project__text">
+                                        PROJECT TITLE
+                                        <time class="project__text" data-time="2020-11-22 18:00">2020</time>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="paint">
+                            <div class="title__paint" data-cat="app">
+                                <img class="title__photo"  src="img/bg-item.png" alt="">
+        
+                                <div class="paint__text">
+                                    <div class="category">CATEGORY</div>
+                                    <div class="project__text">
+                                        PROJECT TITLE
+                                        <time class="project__text" data-time="2020-11-22 18:00">2020</time>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="paint">
+                            <div class="title__paint" data-cat="app">
+                                <img class="title__photo"  src="img/bg-item.png" alt="">
+        
+                                <div class="paint__text">
+                                    <div class="category">CATEGORY</div>
+                                    <div class="project__text">
+                                        PROJECT TITLE
+                                        <time class="project__text" data-time="2020-11-22 18:00">2020</time>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div> <!-- /.adverb -->
+                </div> <!-- /.title__inner -->
+                <button id="noun" onclick="LoadMoreWork()">Load more work</button>
+            </div>  <!-- /.container --> 
+        </div> <!-- /.title -->
+
+        <!-- about me -->
+        <section class="about" id="about__me">
+            <div class="container">
+                <div class="about__me">
+                    <div class="box">
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                    </div>
+                    <div class="about__me-item">
+                        <h4>About me</h4>
+                        <h2>Who am i</h2>
+                        <p>I am Balikbaev Seitkhan was born in 1995 in the Tashkent region. In 2002 he went to primary school. After graduating from school in 2011 he entered the college "Chirchik technical school vocational school". Interests: IT. AI. Travel, art, classical music. Additional qualities: attentiveness, composure, adequate, honest.<span id="dots">...</span><span id="more">isque aliquet a ipsum nec tincidunt. Nulla vitae rhoncus leo. Praesent dui sapien, bibendum quis tempus dictum, auctor ac dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec at mauris porta, ullamcorper sem quis, lobortis sem. Donec sit amet aliquet dui, at varius est. Phasellus porttitor finibus neque vel vehicula.</span></p>
+                        <button id="moreWork" onclick="readMore()">Подробнее</button>
+                    </div>
+                </div>
+            </div>
+        </section> <!-- /.about -->
+
+        <!-- videoplay -->
+        <div class="video">
+            <div class="container">
+                <div class="videoplay">
+                    <div class="box">
+                        <div class="videobox">
+                            <video src="video/Los Angelos.mp4" muted autoplay loop></video>
+                        </div>
+    
+                        <div class="contentbox">
+                            <div class="content">
+                                <h2>
+                                    Los Angelos</h2>
+                                <p>The City of Los Angeles holds many distinctions. L.A. is the entertainment capital of the world, a cultural mecca boasting more than 100 museums, many of them world-class, and a paradise of idyllic weather.Los Angeles is on the leading edge of several growth industries. The L.A. five-county area is also a major tech center, with more than 700,000 people at work in health services/biomedical activities and 190,000 people in aerospace.</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="box">
+                        <div class="videobox">
+                            <video src="video/Beach.mp4" muted autoplay loop></video>
+                        </div>
+    
+                        <div class="contentbox">
+                            <div class="content">
+                                <h2>Rainforests</h2>
+                                <p>Rainforests are found all over the world — in West and Central Africa, South and Central America, Indonesia, Southeast Asia and Australia — on every continent except Antarctica. They are vitally important, producing most of the oxygen we breathe and providing habitat for half of the planet's flora and fauna.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- /.videoplay -->
+            </div> <!-- /.container -->
+        </div> <!-- /.video -->
+
+        <!-- reviews -->
+        <div class="reviews" id="reviews">
+            <div class="container">
+                <div class="reviews__item">
+                    <div class="reviews__text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque eu enim eget luctus. Sed augue felis, facilisis et elementum vitae, aliquam sit amet ante. Sed iaculis eros sem, elementum consequat est consequat eu. Quisque aliquet a ipsum nec tincidunt. Nulla vitae rhoncus leo. Praesent dui sapien, bibendum quis tempus dictum.</p>
+                    </div>
+                    <div class="reviews__author">
+                        <img class="reviews__photo" src="img/reviews__comment.png" alt="">
+                        <div class="reviews__name">Edward M. Brooks</div>
+                        <div class="reviews__company">Marketing House</div>
+                        <div class="rating">
+                            <img src="img/icon/star.svg" width="11" alt="just star)">
+                            <img src="img/icon/star.svg" width="11" alt="just star)">
+                            <img src="img/icon/star.svg" width="11" alt="just star)">
+                            <img src="img/icon/star.svg" width="11" alt="just star)">
+                            <img class="last__star" src="img/icon/star.svg" width="11" alt="just star)">
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- /.container -->
+        </div> <!-- /.reviews -->
+
+        <!-- news -->
+        <section class="news" id="news">~
+            <div class="container">
+                <div class="news__header">
+                    <div class="news__title">READ ME</div>
+                    <p class="subtitle">Sometimes i write something smart</p>
+                </div>
+                <div class="news__blog">
+                    <div class="news__col">
+                        <div class="news__img">
+                            <img src="img/news__bg.png" alt="">
+                            <div class="news__data">
+                                10<br>
+                                june
+                            </div>
+                        </div>
+                        <div class="news__inner">
+                            <div class="news__suptitle">AI system discovers useful new material</div>
+                            <div class="news__category">Information Technology</div>
+                            <p class="news__text">When the words "artificial intelligence" (AI) come to mind, your first thoughts may be of super-smart computers, or robots that perform tasks without needing any help from humans.Now, a multi-institutional team including researchers from the National Institute of Standards and Technology (NIST) has accomplished something not too far off: They developed an AI algorithm called CAMEO that discovered a potentially useful new material without requiring additional training from scientists.
+                            </p>
+                        </div>
+
+                        <button class="news__btn">READ MORE</button>
+                    </div>
+
+                    <div class="news__col">
+                        <div class="news__img">
+                            <img src="img/news__bg.png" alt="">
+                            <div class="news__data">
+                                10<br>
+                                june
+                            </div>
+                        </div>
+                        <div class="news__inner">
+                            <div class="news__suptitle">New museums and major expansions opening in 2020</div>
+                            <div class="news__category">ART</div>
+                            <p class="news__text">The Momentary is a new contemporary art satellite space affiliated with the Crystal Bridges Museum of American Art. The 5,800 sq. m (62,000 sq. ft) former cheese factory in downtown Bentonville will serve as an edgier outpost to the museum founded in 2011 by Alice Walton, the daughter of Walmart founder Sam Walton. A survey of emerging artists, State of the Art II (22 February-24 May), will launch simultaneously in the new venue and at Crystal Bridges.</p>
+                        </div>
+
+                        <button class="news__btn">READ MORE</button>
+                    </div>
+
+                    <div class="news__col">
+                        <div class="news__img">
+                            <img src="img/news__bg.png" alt="">
+                            <div class="news__data">
+                                10<br>
+                                june
+                            </div>
+                        </div>
+                        <div class="news__inner">
+                            <div class="news__suptitle">“Once Upon A Time In Hollywood” next project</div>
+                            <div class="news__category">Hollywood”</div>
+                            <p class="news__text">Some of you might have missed this earlier in the week, but my favorite bit of film news actually concerns a book. Of course, it’s a book based on an Academy Award winning movie, and comes from an Oscar winning filmmaker, but still. Yes, if you missed it, word came down that Quentin Tarantino has a novel in the works, and not just any novel, but a novelization of his last flick, Once Upon a Time in Hollywood. </p>
+                        </div>
+
+                        <button class="news__btn">READ MORE</button>
+                    </div>
+                </div>
+            </div> <!-- /.container -->
+        </section> <!-- /.news -->
+
+        <!-- footer -->
+        <div class="footer">
+            <div class="container">
+                <div class="footer__intro">
+                    <div class="footer__inner">
+                        <div class="copyright">© 2020 .SX01 - Seyit.Rayskeldiev@gmail.com</div>
+                        <div class="icons">
+                            <a href="#">
+                                <img src="img/icon/tel-icon.svg" width="18" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="img/icon/what-icon.svg" width="18" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="img/icon/ins-icon.svg" width="17" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="img/icon/face-icon.svg" height="17" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="img/icon/vk-icon.svg" width="21" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer__inner">
+                        <div class="footer__menu">
+                            <a href="#work" class="scroll">Work</a>
+                            <a href="#about__me" class="scroll">About me</a>
+                            <a href="#reviews" class="scroll">Reviews</a>
+                            <a href="#">Contact</a>
+                            <a href="#">Hire me</a>
+                        </div>
+                    </div>
+                </div> <!-- /.footer__intro -->
+            </div> <!-- /.container -->
+        </div> <!-- /.footer -->
+
+        <div class="modal" style="display: none;">
+            <div class="modal__dialog">
+        
+                <button class="modal__close" type="button" data-close>
+                    <img src="img/icon/modal-close-button.svg" width="34" alt="Close">
+                </button>
+        
+                <div class="modal-work">
+                    <div class="modal-work__preview">
+                        <div data-slider="slick">
+                            <div>
+                                <img class="modal-work__photo" src="https://placehold.it/790x780" alt="">
+                            </div>
+                            <div>
+                                <img class="modal-work__photo" src="https://placehold.it/790x780/333" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-work__content">
+        
+                        <div class="modal-work__header">
+                            <h3 class="modal-work__title">Project title</h3>
+                            <div class="modal-work__info">
+                                category <span class="modal-work__info-divider">|</span> 2018
+                            </div>
+                        </div>
+        
+                        <div class="modal-work__client">
+                            <div class="modal-work__client-title">Client:</div>
+                            <div class="modal-work__client-company">Creative Agency</div>
+                        </div>
+        
+                        <div class="modal-work__text">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur dicta, recusandae debitis iusto quos voluptatum at. Dolorum a, velit rerum dicta aut sapiente, optio accusantium? Sunt sed praesentium est minima.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur dicta, recusandae debitis iusto quos voluptatum at. Dolorum a, velit rerum dicta aut sapiente, optio accusantium? Sunt sed praesentium est minima.</p>
+                        </div>
+        
+                        <div class="modal-work__footer">
+                            <button class="modal-work__btn slickPrev" type="button">
+                                <img src="img/icon/back.svg" height="11" alt="">
+                                Previous
+                            </button>
+                            <button class="modal-work__btn slickNext" type="button">
+                                Next
+                                <img src="img/icon/next.svg" height="11" alt="">
+                            </button>
+                        </div>
+        
+                    </div><!-- /.modal-work__content -->
+                </div><!--/.modal-work -->
+        
+            </div><!-- /.modal__dialog -->
+        </div><!-- /.modal -->
+
+        
+        <div class="modal" style="display: none;">
+            <div class="modal__dialog">
+
+                <div class="resume__photo">
+                    <img src="img/photoForModal.jpg" alt="">
+                </div>
+        
+                <button class="modal__close" type="button" data-close>
+                    <img src="img/icon/modal-close-button.svg" width="34" alt="Close">
+                </button>
+        
+                <div class="modal__content">
+                    <h3 class="modal__title text-center">RESUME</h3>
+        
+                    <div class="text-center">
+                        <a class="btn btn--thin" href="#">DOWNLOAD PDF</a>
+                        <a class="btn btn--thin" href="#">PRINT</a>
+                    </div>
+        
+                    <div class="timeline">
+                        <div class="timeline__col  timeline__col--left">
+                            <h4 class="timeline__title">EXPERIENCE</h4>
+        
+                            <div class="timeline__item">
+                                <time class="timeline__date" datetime="11-21-2020">2020 - <b>Present</b></time>
+                                <h5 class="timeline__subtitle">Freelancer</h5>
+                                <div class="timeline__position">Java Script</div>
+                                <div class="timeline__text">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis debitis autem aspernatur sed iusto maiores nihil magni provident dolore.</p>
+                                </div>
+                            </div>
+        
+                            <div class="timeline__item">
+                                <time class="timeline__date" datetime="11-21-2020">2020 - <b>Present</b></time>
+                                <h5 class="timeline__subtitle">Freelancer</h5>
+                                <div class="timeline__position">React.js</div>
+                                <div class="timeline__text">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis debitis autem aspernatur sed iusto maiores nihil magni provident dolore.</p>
+                                </div>
+                            </div>
+        
+                            <div class="timeline__item">
+                                <time class="timeline__date" datetime="11-21-2020">2020 - <b>Present</b></time>
+                                <h5 class="timeline__subtitle">Freelancer</h5>
+                                <div class="timeline__position">Node.js</div>
+                                <div class="timeline__text">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis debitis autem aspernatur sed iusto maiores nihil magni provident dolore.</p>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="timeline__col  timeline__col--right">
+                            <h4 class="timeline__title">EDUCATION</h4>
+        
+                            <div class="timeline__item">
+                                <time class="timeline__date" datetime="11-21-2020">
+                                    2002 - 2011
+                                </time>
+                                <h5 class="timeline__subtitle">№ 53 school</h5>
+                                <div class="timeline__position">9 year</div>
+                            </div>
+        
+                            <div class="timeline__item">
+                                <time class="timeline__date" datetime="11-21-2020">2011 - 2014</time>
+                                <h5 class="timeline__subtitle">
+                                    Chirchik technical school <br>
+                                     vocational school
+                                </h5>
+                                <div class="timeline__position">3 year</div>
+                            </div>
+        
+                            <h4 class="timeline__title">Skills</h4>
+                            <div class="progress-bar">
+                                <div class="progress-bar__item">
+                                    <div class="progress-bar__left">
+                                        <div class="progress-bar__title">
+                                            <img src="img/icon/html5.svg" width="15" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="progress-bar__right">
+                                        <div class="progress-bar__bar">
+                                            <div class="progress-bar__progress" style="width: 85%;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="progress-bar__item">
+                                    <div class="progress-bar__left">
+                                        <div class="progress-bar__title">
+                                            <img src="img/icon/css-3.svg" width="15" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="progress-bar__right">
+                                        <div class="progress-bar__bar">
+                                            <div class="progress-bar__progress" style="width: 90%;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <div class="progress-bar__item">
+                                    <div class="progress-bar__left">
+                                        <div class="progress-bar__title">
+                                            <img src="img/icon/java-script.svg" width="15" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="progress-bar__right">
+                                        <div class="progress-bar__bar">
+                                            <div class="progress-bar__progress" style="width: 80%;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="progress-bar__item">
+                                    <div class="progress-bar__left">
+                                        <div class="progress-bar__title">
+                                            <img src="img/icon/reactjs.png" width="15" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="progress-bar__right">
+                                        <div class="progress-bar__bar">
+                                            <div class="progress-bar__progress" style="width: 80%;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <h4 class="timeline__title">Awards</h4>
+        
+                            <div class="timeline__item">
+                                <time class="timeline__date" datetime="11-21-2020">2020</time>
+                                <h5 class="timeline__subtitle">№ 1</h5>
+                                <div class="timeline__position">Chess champion</div>
+                                <div class="timeline__text">
+                                    <p>In 2020 January in the Armies I became the champion of the battalion in chess</p>
+                                </div>
+                            </div>
+                            <div>
+                                <a class="diploma" href="diploma/chess-champion.jpg">
+                                    SEE MY DIPLOMA
+                                </a>
+                            </div>
+                        </div><!-- /.timeline__col -->
+        
+                    </div><!-- /.timeline -->
+        
+                    <div class="text-center">
+                        <a class="btn btn--thin" href="#">Hire me</a>
+                    </div>
+        
+                </div><!-- /.modal__content -->
+        
+            </div><!-- /.modal__dialog -->
+        </div><!-- /.modal -->
+        
+        
+        <div class="modal" style="display: none;">
+            <div class="modal__dialog  modal__dialog--sm">
+        
+                <button class="modal__close" type="button" data-close>
+                    <img src="img/icon/modal-close-button.svg" width="34" alt="Close">
+                </button>
+        
+                <div class="contact">
+                    <div class="contact__left">
+                        <h3 class="modal__title mb-0">LET'S TALK!</h3>
+                        <h4 class="modal__subtitle">CALL ME OR SEND ME A REQUEST</h4>
+        
+                        <ul class="contact__info">
+                            <li class="contact__info-item">
+                                <img class="contact__info-icon" src="img/icon/call.svg" width="13" alt="">
+                                <a href="tel:998931660011">+998 93 166 00 11</a>
+                            </li>
+                            <li class="contact__info-item">
+                                <img class="contact__info-icon" src="img/icon/email.svg" width="13" alt="">
+                                <a href="malito:Seyit.Riskeldiev@gmail.com">
+                                    Seyit.Riskeldiev@gmail.com
+                                </a>
+                            </li>
+                        </ul>
+        
+                        <form class="form" action="/" method="post">
+                            <div class="form__group">
+                                <input class="form__input" name="input-email" type="text" placeholder="Adress e-mail">
+                            </div>
+        
+                            <div class="form__group">
+                                <textarea class="form__textarea" name="input-text"  placeholder="Type your request..."></textarea>
+                            </div>
+        
+                            <div class="text-right">
+                                <a class="btn btn--thin" type="submit">SEND</a>
+                            </div>
+                        </form>
+                    </div><!-- /.contact__left -->
+                    <div class="contact__right">
+                        <img src="img/modal__three.png" alt="">
+                    </div>
+                </div><!-- /.contact -->
+        
+            </div><!-- /.modal__dialog -->
+        </div><!-- /.modal -->
+
+        <script src="app.js"></script>
+</body>
+</html> <!-- .sx01 -->

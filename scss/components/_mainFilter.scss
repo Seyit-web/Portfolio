@@ -1,0 +1,88 @@
+
+// Main filter
+.main__filter{
+    width: 100%;
+    position: relative;
+    margin: 40px 0 13px 0;
+
+    .theme{
+        display: flex;
+        align-items: center;
+
+        p{
+            color: $fontColor;
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+            @media (max-width: 576px) {
+                font-size: 18px;
+            }
+        }
+
+        label{
+            position: relative;
+
+            .fas {
+                position: relative;
+                width: 45px;
+                height: 45px;
+                line-height: 40px;
+                text-align: center;
+                margin: 0 4px;
+                padding: 1px 5px 3px 5px;
+                color: #2b2b2b;
+                font-size: 15px;
+                border-radius: 50%;
+                cursor: pointer;
+                box-shadow: -1px -1px 3px rgba(255, 255, 255, 0.1), 
+                            2px 2px 6px rgba(0, 0, 0, 0.8);
+                
+                &:hover{
+                    color: $hColor;
+                    box-shadow: -1px -1px 3px rgba(255, 255, 255, 0.1), 
+                                2px 2px 6px rgba(0, 0, 0, 0.8),
+                            inset -2px -2px 10px rgba(255, 255, 255, 0.05), 
+                            inset 2px 2px 10px rgba(0, 0, 0, 0.5);
+                }
+                @media (max-width: 576px) {
+                    width: 40px;   
+                    height: 40px;
+                    font-size: 12px;
+                }
+            }
+        }
+        
+        input{
+            appearance: none;
+            cursor: pointer;
+        }
+
+    }   
+    .filter{
+        display: flex;
+        position: absolute;
+        top: 15px;
+        left: 42%;
+        z-index: 1;
+        @media (max-width: 991px) {
+            left: 38%;
+        }
+        @media (max-width: 771px) {
+            top: 55px;
+            left: 34%;
+        }
+        @media (max-width: 576px) {
+            left: auto;
+        }
+        .filter__row{
+            font-size: 12px;
+            font-weight: bold;
+            color: $fontColor;
+            margin-right: 25px;
+        }
+    } 
+    @media (max-width: 321px) {
+        margin-top: 10px;
+    }
+}

@@ -1,0 +1,39 @@
+
+$borColor: #2b2a2c;
+$fontColor: #2B2A2C;
+$fontGray: #BBBBCC;
+$hColor: #00fff1;
+$blackColor: #000;
+$transition: background-color 0.2s linear,
+color 0.3s linear;
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background: #fff;
+    // &.no-scroll {
+    //     overflow: hidden;
+    // }
+}
+
+*,
+*:before,
+*:after {
+    font-size: 15px;
+    color: $fontColor;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    z-index: 10;
+}
+
+a, a:hover {
+    text-decoration: none;
+}
+
+ul, li {
+    list-style: none;
+}
+
+#more{
+    display: none;
+}

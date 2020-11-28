@@ -1,0 +1,95 @@
+
+// Reviews
+.reviews{
+    position: relative;
+    padding: 70px 30px;
+    margin-top: 80px;
+    background: #332F30 url("../img/corner.png")center no-repeat;
+    background-size: cover;
+
+    .reviews__item{
+        width: 100%;
+        max-width: 800px;
+        margin: 0 auto;
+
+        .reviews__text {
+            margin: 0 auto;
+            text-align: center;
+            
+            p {
+                color: #fff;
+                font-size: 14px;
+                font-weight: 400;
+                @media (max-width: 771px) {
+                    font-size: 10px;
+                }
+            }
+        }
+    
+        .reviews__author{
+            position: absolute;
+            top: 100%;
+            left: 45%;
+            z-index: 1;
+            margin-top: -55px;
+            text-align: center;
+    
+            .reviews__photo{
+                width: 103px;
+                height: 103px;
+                border-radius: 50%;
+                @media (max-width: 576px) {
+                    width: 75px;
+                    height: 75px;
+                }
+                @media (max-width: 321px) {
+                    width: 65px;
+                    height: 65px;
+                }
+            }
+    
+            .reviews__name{
+                font-size: 16px;
+                font-weight: bold;
+                color: rgba(0, 0, 0, 0.500);
+                @media (max-width: 771px) {
+                    font-size: 13px;
+                }
+            }
+    
+            .reviews__company{
+                font-size: 14px;
+                font-weight: italic;
+                color: rgba(0, 0, 0, 0.500);
+                @media (max-width: 771px) {
+                    font-size: 11px;
+                }
+            }
+    
+            .last__star{
+                opacity: 0.3;
+            }
+            @media (max-width: 991px) {
+                left: 43%;
+            }
+            @media (max-width: 576px) {
+                top: 111%;
+                left: 40%;
+            }
+            @media (max-width: 450px) {
+                left: 37.5%;
+            }
+            @media (max-width: 321px) {
+                top: 116%;
+                left: 33%;
+            }
+        }
+    }
+    @media (max-width: 576px) {
+        margin-top: 55px;  
+        padding: 50px 30px; 
+    }  
+    @media (max-width: 321px) {
+        padding: 40px 10px; 
+    }   
+}
