@@ -6,6 +6,14 @@
     margin-top: 80px;
     background: #332F30 url("../img/corner.png")center no-repeat;
     background-size: cover;
+    
+    @media (max-width: 576px) {
+        margin-top: 55px;  
+        padding: 50px 30px; 
+    }  
+    @media (max-width: 321px) {
+        padding: 40px 10px; 
+    }  
 
     .reviews__item{
         width: 100%;
@@ -33,6 +41,21 @@
             z-index: 1;
             margin-top: -55px;
             text-align: center;
+            
+            @media (max-width: 991px) {
+                left: 43%;
+            }
+            @media (max-width: 576px) {
+                top: 111%;
+                left: 40%;
+            }
+            @media (max-width: 450px) {
+                left: 37.5%;
+            }
+            @media (max-width: 321px) {
+                top: 116%;
+                left: 33%;
+            }
     
             .reviews__photo{
                 width: 103px;
@@ -69,27 +92,6 @@
             .last__star{
                 opacity: 0.3;
             }
-            @media (max-width: 991px) {
-                left: 43%;
-            }
-            @media (max-width: 576px) {
-                top: 111%;
-                left: 40%;
-            }
-            @media (max-width: 450px) {
-                left: 37.5%;
-            }
-            @media (max-width: 321px) {
-                top: 116%;
-                left: 33%;
-            }
         }
-    }
-    @media (max-width: 576px) {
-        margin-top: 55px;  
-        padding: 50px 30px; 
-    }  
-    @media (max-width: 321px) {
-        padding: 40px 10px; 
-    }   
+    } 
 }

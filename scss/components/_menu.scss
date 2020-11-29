@@ -1,0 +1,96 @@
+
+.menu {
+    position: fixed;
+    left: -150vw;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    background: rgba(6, 15, 49, 0.9);
+    transition: left 0.2s;
+
+    .menu__close {
+        position: absolute;
+        right: 10%;
+        top: 10%;
+        width: 30px;
+        height: 30px;
+        background: none;
+        font-family: inherit;
+        border: 0;
+        @media (max-width: 576px) {
+            width: 25px;   
+            height: 25px;
+        }
+        @media (max-width: 321px) {
+            width: 20px;   
+            height: 20px;
+        }
+        &:focus {
+            outline: none;
+        }
+
+        .menu__close-line {
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 100%;
+            height: 3px;
+            background-color: #fff;
+        }
+        .menu__close-line:first-child {
+            transform: rotate(45deg);
+        }
+        .menu__close-line:last-child {
+            transform: rotate(-45deg);
+        }
+    }
+
+    .menu__nav {
+        width: 100%;
+        height: 100%;
+
+        .menu__list {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            @media (max-width: 576px) {
+                height: 90%;   
+            }
+            @media (max-width: 321px) {
+                height: 75%;   
+            }
+        
+            .menu__item {
+                
+                .menu__link {
+                    display: inline-block;
+                    margin-bottom: 20px;
+                    font-size: 42px;
+                    color: #fff;
+                    font-weight: 700;
+                    transition: color 0.2s;
+                    @media (max-width: 576px) {
+                        font-size: 40px;
+                        margin-bottom: 15px;
+                    }
+                    @media (max-width: 321px) {
+                        font-size: 30px;
+                        margin-bottom: 12px;
+                    }
+                    &:hover {
+                        color: aqua;
+                        transition: color 0.2s;
+                    }
+                }
+            }
+        }
+    }
+}
+.menu--visible {
+    left: 0;
+    transition: left 0.2s;
+}

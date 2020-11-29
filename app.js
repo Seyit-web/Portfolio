@@ -1,4 +1,16 @@
 
+const burger = document.querySelector('.burger'),
+      close = document.querySelector('.menu__close'),
+      menu = document.querySelector('.menu');
+
+    burger.addEventListener('click', () => {
+    menu.classList.add('menu--visible');
+    });
+
+    close.addEventListener('click', () => {
+    menu.classList.remove('menu--visible');
+    });
+
 // Nav__menu
 document.addEventListener('DOMContentLoaded', () => {
     const navLine = document.querySelector('.nav__line'),
@@ -34,25 +46,6 @@ function changeColorDark() {
     document.body.style.background = arrayThree;
 }
 
-// Buttons Hire me and See my rezume
-// const buttons = document.querySelectorAll('a');
-//     buttons.forEach(btn => {
-        
-//         btn.addEventListener('click', function(e) {
-//             let x = e.clientX - e.target.offsetLeft;
-//             let y = e.clientY - e.target.offsetTop;
-
-//             let ripples = document.createElement('span');
-//             ripples.style.left = x + 'px';
-//             ripples.style.top = y + 'px';
-//             this.appendChild(ripples);
-
-//             setTimeout(() => {
-//                 ripples.remove()
-//             },1000);
-//     })
-// });
-
 // button LoadMoreWork
 function LoadMoreWork() {
     let hide = document.getElementById('hide');
@@ -70,7 +63,7 @@ function LoadMoreWork() {
     }
 };
 
-// Button for About__me
+// Button About__me
 function readMore() {
     let dots = document.getElementById('dots');
     let more = document.getElementById('more');
@@ -87,29 +80,19 @@ function readMore() {
     }
 };
 
-// // Title-filter
-// const btns = document.querySelectorAll('.hireMe');
-//     btns.forEach((el) => {
-//         el.addEventListener('click', (e) => {
-//             e.preventDefault();
-//             let hire = e.currentTarget.getAttribute('data-hire');
-//             console.log(hire);
-//     });
-// });
-
 // smooth scroll for header
 const anchors = document.querySelectorAll('.scroll');
-    for (let anchor of anchors) {
-        anchor.addEventListener('click', function(event) {
-            event.preventDefault();
-            const blockId = anchor.getAttribute('href')
-            document.querySelector('' + blockId).scrollIntoView({
-                behavior: 'smooth',
-                block: 'start'
-            })
+  
+for (let anchor of anchors) {
+    anchor.addEventListener('click', function(event) {
+        event.preventDefault();
+        const blockId = anchor.getAttribute('href')
+        document.querySelector('' + blockId).scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
         })
-    };
-
+    })
+};
 
 //hight 
 function stars() {
